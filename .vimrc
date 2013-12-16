@@ -58,6 +58,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'shawncplus/skittles_berry'
+Bundle 'tomasr/molokai'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -85,4 +86,9 @@ colorscheme skittles_berry
 "let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 let g:EasyMotion_leader_key='<Leader>'
+
+" function to autoload the vimrc if edited
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
