@@ -58,6 +58,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'shawncplus/skittles_berry'
+Bundle "mattn/emmet-vim"
 Bundle 'tomasr/molokai'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
