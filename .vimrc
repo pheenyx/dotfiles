@@ -44,11 +44,11 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " My bundles here:
 "
@@ -70,7 +70,7 @@ Bundle 'tomasr/molokai'
 " Git repos on your local machine (i.e. when working on your own plugin)
 "Bundle 'file:///Users/gmarik/path/to/plugin'
 " ...
-
+call vundle#end()
 filetype plugin indent on     " required!
 "
 " Brief help
